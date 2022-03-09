@@ -1,0 +1,12 @@
+---
+# tasks file for custom
+- name: Create the remote directory 
+  file: 
+    state: directory   
+    recurse: yes 
+    path: "{{ remote_dir }}" 
+                
+- name: Install the new facts 
+  copy: 
+    src: "{{ facts_file }}" 
+    dest: "{{ remote_dir }}"

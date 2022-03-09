@@ -1,0 +1,8 @@
+- name: Install remote facts 
+  hosts: webserver
+  become: yes 
+  vars: 
+    remote_dir: /etc/ansible/facts.d 
+    facts_file: custom.fact 
+  roles:
+    - custom

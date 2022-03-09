@@ -1,0 +1,7 @@
+---
+# tasks file for servicecheck-role
+ - name: "populate service facts"
+   service_facts:
+ - name: "see the service facts as they are"
+   debug:
+     msg: "{{ansible_facts.services}}"

@@ -1,0 +1,6 @@
+---
+- name: installing Httpd server
+  hosts: all
+  become: yes
+  roles:
+    - httpd

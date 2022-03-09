@@ -1,0 +1,6 @@
+---
+# tasks file for httpd
+- name: installing httpd server
+  yum :
+    name: httpd
+    state: latest

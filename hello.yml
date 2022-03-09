@@ -1,0 +1,8 @@
+---
+ - name : playbook
+   hosts : all
+   become: yes
+   vars:
+     txt: welcome all to HCL
+   roles:
+    - hello-role

@@ -1,0 +1,5 @@
+ - name: execution 1     
+   debug: var=txt
+ - name: execution 2
+   debug:
+      msg: "{{txt}}"

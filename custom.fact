@@ -1,0 +1,4 @@
+[general]         
+server = httpd
+service = httpd
+state = started
